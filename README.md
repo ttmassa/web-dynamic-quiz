@@ -1,3 +1,6 @@
+# Access
+J'ai fait 2 branches. Une en React.js (que j'ai appris cet été), et une autre avec un fichier JS classique. Suite à un problème de virus, j'ai dû créé un nouveau répertoire et y copier coller tous les fichiers du répertoire d'origine dynamic-quizz que l'on peut encore trouver sur mon Github.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
