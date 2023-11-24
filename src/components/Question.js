@@ -18,7 +18,7 @@ export default function Question(props) {
                 onClick={handleClick}
             >{props.level}</p>
             <h2>{props.question}</h2>
-            {isAnswerVisible && <p className='question--answer'> {props.answer} </p>}
+            {isAnswerVisible && <p className='question--answer'> ☑️ {props.answer} </p>}
         </section>
     );
 }
