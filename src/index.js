@@ -129,3 +129,8 @@ const displayFilteredQuestions = () => {
 
 // Obligé de mettre notre eventListener ici sinon problème de scope
 searchbar.addEventListener('input', displayFilteredQuestions);
+
+// Recharge la page quand on clique sur le logo
+logo.addEventListener('click', () => {
+    window.location.reload();
+});
