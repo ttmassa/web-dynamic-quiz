@@ -24,7 +24,7 @@ const header = document.createElement('header');
 
 const logo = document.createElement('img');
 logo.classList.add('header--img');
-logo.src = '../assets/logo-quiz.png'
+logo.src = 'https://www.pngmart.com/files/19/Quiz-Logo-PNG-Pic.png'
 logo.alt = 'Logo Quiz';
 header.appendChild(logo);
 
