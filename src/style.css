@@ -34,6 +34,18 @@ header {
     cursor: pointer;
 }
 
+.header--img:hover {
+    opacity: 0.8;
+}
+
+.nav--score {    
+    position: relative;
+    top: 50px;
+    color: rgb(255, 172, 71);
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .header--descr {
     text-align: right;
     font-size: 14px;
@@ -46,6 +58,7 @@ header {
 }
 
 .searchbar--search {
+    border: 1px solid red;
     width: var(--width);
     height: 40px;
     border: none;

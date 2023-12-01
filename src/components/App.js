@@ -10,6 +10,9 @@ export default function App() {
     const [filteredData, setFilteredData] = useState(data);
     const [score, setScore] = useState(0);
 
+    // Afficher le score
+    const nbrOfQuestions = data.length;
+
     // Mettre à jour l'état de la valeur de recherche lorsqu'elle change
     const handleSearchChange = (event) => {
         const value = event.target.value;
@@ -34,6 +37,8 @@ export default function App() {
             <Header score={score}/>
             {/* Barre de recherche */}
             <nav className="searchbar--container">
+                <h2 className='nav--score'>Score: {score} / {nbrOfQuestions}</h2>
+
                 <input
                     className="searchbar--search"
                     type="text"
