@@ -8,6 +8,7 @@ export default function App() {
     // Définir l'état initial pour la valeur de recherche et les données filtrées
     const [searchValue, setSearchValue] = useState("");
     const [filteredData, setFilteredData] = useState(data);
+    const [score, setScore] = useState(0);
 
     // Mettre à jour l'état de la valeur de recherche lorsqu'elle change
     const handleSearchChange = (event) => {
@@ -19,14 +20,18 @@ export default function App() {
         setFilteredData(newFilteredData);
     };
 
+    const handleScoreChange = () => {
+        setScore(score + 1);
+    };
+
     // Créer un tableau de composants Question à partir des données filtrées
     const quizQuestions = filteredData.map((item) => (
-        <Question key={item.id} {...item} />
+        <Question key={item.id} onScoreChange={handleScoreChange} {...item} />
     ));
 
     return (
         <div className="app--container">
-            <Header />
+            <Header score={score}/>
             {/* Barre de recherche */}
             <nav className="searchbar--container">
                 <input

@@ -9,6 +9,9 @@ export default function Question(props) {
         setIsAnswerVisible(!isAnswerVisible);
     }
 
+    // Fonction appelé chaque fois que l'utilisateur clique sur une case à cocher pour modifier le score
+    const handleCheck = () => props.onScoreChange();
+
 
     return (
         <section className='question'>
@@ -20,6 +23,7 @@ export default function Question(props) {
             <input 
                 type='checkbox'
                 className='question--checkbox'
+                onClick={handleCheck}
             />
             <h2>{props.question}</h2>
             {isAnswerVisible && <p className='question--answer'> ☑️ {props.answer} </p>}
