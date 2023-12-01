@@ -17,6 +17,10 @@ export default function Question(props) {
                 className='question--level'
                 onClick={handleClick}
             >{props.level}</p>
+            <input 
+                type='checkbox'
+                className='question--checkbox'
+            />
             <h2>{props.question}</h2>
             {isAnswerVisible && <p className='question--answer'> ☑️ {props.answer} </p>}
         </section>

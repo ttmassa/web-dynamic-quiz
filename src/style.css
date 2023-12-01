@@ -84,7 +84,6 @@ header {
     height: 30px;
     border-radius: 50%;
     background-color: white;
-
 }
 
 .question--level:hover {
@@ -94,4 +93,16 @@ header {
 .question--answer {
     font-size: 20px;
     margin-top: 20px;
+}
+
+.question--checkbox {
+    border: 1px solid red;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
 }
